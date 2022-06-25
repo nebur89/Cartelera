@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "purgecss": "^4.1.3"
+  },
+  "name": "cartelera",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "limpiacss": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

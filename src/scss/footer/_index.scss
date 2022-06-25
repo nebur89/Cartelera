@@ -1,0 +1,28 @@
+.footer{
+
+
+    &__info{
+
+            a{
+                font-size: 2rem;
+                text-decoration: none;
+            }
+
+    }
+
+    &__rrss{
+      
+        font-size: 40px;
+       
+    }
+
+    &__app{
+
+  
+        &__logo{
+            width: 180px;
+            
+        }
+
+    }
+}

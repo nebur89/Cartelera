@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="build/css/index.css">
+    <link rel="shortcut icon" href="build/img/favicon/favicon-op1-32x32.png" type="image/ico" />
+
+    <title>TuCartelera</title>
+</head>
+
+<body>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container-xl">
+
+        <!-- FILA HEADER -->
+        <header class="header row  mb-3 ">
+
+            <!-- FILA HEADER BARRASUPERIOR -->
+            <div class="header__barraSuperior row  m-0 p-5  bg-primary">
+
+                <div
+                    class="header__barraSuperior__banner d-flex flex-column align-items-center flex-md-row justify-content-md-center ">
+
+                    <div class="header__barraSuperior__banner__logo w-50 ">
+
+                        <a href="index.html"><img src="build/img/logo/logo-1.png" class="img-fluid" alt="logo"></a>
+
+                    </div>
+
+                    <div class="header__barraSuperior__tagline px-md-5 ">
+
+                        <h1 class="display-1  text-center  text-md-start  ">TuCartelera </h1>
+                        <h2 class="display-2  text-center  text-md-start text-light">Películas Series Estrenos </h2>
+                        <h4 class="display-4  text-center text-md-start ">¡El cine más aclamado y las últimas
+                            novedades! </h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FILA HEADER BARRA INFERIOR -->
+            <div class="header__barraInferior row  m-0 p-0   bg-secondary ">
+
+                <nav class="header__barraInferior__nav  navbar navbar-expand-md navbar-light border-4 border-bottom border-primary  p-0 m-0">
+
+
+
+                    <div class="navbar-toggler w-100  p-0 m-0" data-bs-toggle="collapse"
+                    data-bs-target="menu-horizontal" data-bs-toggle="menu-movil" aria-expanded="false">
+
+                        <div class="accordion">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button d-flex justify-content-center m-0 " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#menu-movil" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <span class="navbar-toggler-icon "></span>
+                                </button>
+                            </h2>
+
+                            <div id="menu-movil" class="accordion-collapse collapse show m-0 p-0" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                <div class="menu-movil accordion-body   p-0 m-0" role="button" >
+                                    <a class="link-light"  href="index.html"  onclick="enlace(event)" >Películas</a>
+                                    <a class="link-light"  href="index.html" onclick="enlace(event)">Series</a>
+                                    <a class="link-light"  href="index.html"  onclick="enlace(event)">Estrenos</a>
+                                    <a class="link-light"  href="index.html"  onclick="enlace(event)" >Eventos</a>
+                                    <a class="link-light"  href="registro.html" onclick="enlace(event)">Registrate!</a>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                    <!-- Menu horizontal -->
+                    <div id="menu-desplegado" class="collapse navbar-collapse justify-content-around ">
+                        <a class="link-light" href="index.html">Películas</a>
+                        <a class="link-light" href="index.html">Series</a>
+                        <a class="link-light" href="index.html">Estrenos</a>
+                        <a class="link-light" href="index.html">Eventos</a>
+                        <a class="link-light" href="registro.html">Registrate!</a>
+                    </div>
+
+
+                </nav>
+
+
+
+            </div>
+
+        </header>
+
+
+        <!--Fila BUSCADOR -->
+        <section class="buscador row  justify-content-end ">
+
+            <div class="buscador__contenedor d-flex  col-md-5  col-xl-3 p-0 mb-3  ">
+
+                <div class="form-outline d-inline-block w-100 ">
+                    <input type="search" id="form1" class="form-control h-100" />
+                </div>
+
+                <button type="button" class="btn btn-primary p-3">
+                    <ion-icon class="buscador__contenedor__lupa" name="search-outline"></ion-icon>
+                </button>
+            </div>
+
+        </section>
+
+        <!--FILA MAIN -->
+        <main class="main row my-md-5  bg-light ">
+
+
+            <section class="main_contenido container">
+
+                <div class="main_contenido_fila row pb-3">
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Alita</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/alita.jpg" class="card-img-top"
+                                        alt="alita"></a>
+                                <h4 class="card-text text-warning">6.8</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">avatar</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/avatar.jpg" class="card-img-top"
+                                        alt="avatar"></a>
+                                <h4 class="card-text text-warning ">7.8</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">bitelchus</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/Bitelchus.jpg"
+                                        class="card-img-top" alt="bitelchus"></a>
+                                <h4 class="card-text text-warning ">7.8</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Cadena Perpetua</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/cadena-perpetua.jpg"
+                                        class="card-img-top" alt="Cadena Perpetua"></a>
+                                <h4 class="card-text text-warning">9.0</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Chicos monster</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/chicos monster.jpg"
+                                        class="card-img-top" alt="Chicos monster"></a>
+                                <h4 class="card-text text-warning">9.0</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Chucky</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/Chucky.jpg" class="card-img-top"
+                                        alt="Chucky"></a>
+                                <h4 class="card-text text-warning">9.0</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Eduardo manos tijeras</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/Eduardo manos tijeras.jpg"
+                                        class="card-img-top" alt="Eduardo manos tijeras"></a>
+                                <h4 class="card-text text-warning">9.0</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">El hombre Bicentenario</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/El hombre Bicentenario.jpg"
+                                        class="card-img-top" alt="El hombre Bicentenario"></a>
+                                <h4 class="card-text text-warning">9.0</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">el resplandor</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/el resplandor.jpg"
+                                        class="card-img-top" alt="el resplandor"></a>
+                                <h4 class="card-text text-warning">9.0</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">ET</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/willow.jpg" class="card-img-top"
+                                        alt="ET"></a>
+                                <h4 class="card-text text-warning">8.0</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">gladiator</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/gladiator.jpg"
+                                        class="card-img-top" alt="gladiator"></a>
+                                <h4 class="card-text text-warning">10</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">jurassic Park</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/jurassic Park.jpg"
+                                        class="card-img-top" alt="jurassic Park"></a>
+                                <h4 class="card-text text-warning">10</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">la historia interminable</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/la historia interminable.jpg"
+                                        class="card-img-top" alt="la historia interminable"></a>
+                                <h4 class="card-text text-warning">10</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">La vida es bella</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/La-vida-es-bella.jpg"
+                                        class="card-img-top" alt="La vida es bella"></a>
+                                <h4 class="card-text text-warning">8.6</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">La chaqueta metalica</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/La_chaqueta_metalica.jpg"
+                                        class="card-img-top" alt="La chaqueta metalica"></a>
+                                <h4 class="card-text text-warning">8.4</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">los cazafantasmas</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/los cazafantasmas.jpg"
+                                        class="card-img-top" alt="los cazafantasmas"></a>
+                                <h4 class="card-text text-warning">7.8</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Los Gremlins</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/Los Gremlins.jpg"
+                                        class="card-img-top" alt="Los Gremlins"></a>
+                                <h4 class="card-text text-warning">7.6</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">los intocables de eliot ness</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/los intocables de  eliot ness.jpg"
+                                        class="card-img-top" alt="los intocables de eliot ness"></a>
+                                <h4 class="card-text text-warning">8.6</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">los goonies</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/los-goonies.jpg"
+                                        class="card-img-top" alt="los goonies"></a>
+                                <h4 class="card-text text-warning">8.6</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">la milla verde</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/milla-verde.jpg"
+                                        class="card-img-top" alt="milla verde"></a>
+                                <h4 class="card-text text-warning">8.6</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">pesadillas antes de navidad</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img
+                                        src="build/img/peliculas/pesadillas antes de navidadjpg.jpg"
+                                        class="card-img-top" alt="pesadillas antes de navidad"></a>
+                                <h4 class="card-text text-warning">8.6</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">pulp fiction</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/pulp-fiction.jpg"
+                                        class="card-img-top" alt="pulp fiction"></a>
+                                <h4 class="card-text text-warning">9</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">star wars</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/star-wars.jpg"
+                                        class="card-img-top" alt="star wars"></a>
+                                <h4 class="card-text text-warning">7.9</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">superman</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/superman.jpg" class="card-img-top"
+                                        alt="superman"></a>
+                                <h4 class="card-text text-warning">10</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">superman</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/superman.jpg" class="card-img-top"
+                                        alt="superman"></a>
+                                <h4 class="card-text text-warning">10</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">terminator</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/terminator.jpg"
+                                        class="card-img-top" alt="terminator"></a>
+                                <h4 class="card-text text-warning">7</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">titanic</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/titanic.jpg" class="card-img-top"
+                                        alt="titanic"></a>
+                                <h4 class="card-text text-warning">7</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">un hombre lobo americano en la paris</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img
+                                        src="build/img/peliculas/un hombre lobo americano en la luna.jpg"
+                                        class="card-img-top" alt="un hombre lobo americano en paris"></a>
+                                <h4 class="card-text text-warning">7.6</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">v de vendeta</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/v de vendeta.jpg"
+                                        class="card-img-top" alt="v de vendeta"></a>
+                                <h4 class="card-text text-warning">10</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="main__columna col-md-4 g-md-3  col-xl-2  g-lg-5  g-2 ">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">willow</h4>
+                                <a href=""  data-bs-toggle="modal" data-bs-target="#detalles"><img src="build/img/peliculas/willow.jpg" class="card-img-top"
+                                        alt="willow"></a>
+                                <h4 class="card-text text-warning">9</h4>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+        <!--FILA PUBLICIDAD-->
+        <section class="publicidad row justify-content-center mb-5 ">
+
+            <article class="publicidad__columna col col-md-10 col-xl-8 p-0">
+
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <a href="https://www.viajeselcorteingles.es/"><img class="d-block w-100"
+                                    src="build/img/publicidad/tenerife.png" alt="tenerife"></a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://www.viajeselcorteingles.es/"><img class="d-block w-100"
+                                    src="build/img/publicidad/cruceros.png" alt="cruceros"></a>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+
+                </div>
+
+            </article>
+
+
+
+        </section>
+
+
+
+        <!-- FOOTER-->
+        <footer class="footer row justify-content-around  my-0 p-4 bg-primary ">
+
+            <article class="footer__rrss  col-md-3 order-lg-1  d-flex  flex-row justify-content-center  align-items-center mb-5 ">
+
+                <ion-icon class=" p-2" name="logo-facebook"></ion-icon>
+                <ion-icon class=" p-2" name="logo-instagram"></ion-icon>
+                <ion-icon class=" p-2" name="logo-twitter"></ion-icon>
+                <ion-icon class=" p-2" name="logo-twitch"></ion-icon>
+
+            </article>
+
+            <article class="footer__info col-md-3  order-lg-0  p-0  d-flex flex-column align-items-center">
+
+                <h4 class="display-4 mb-3">TuCartera</h4>
+
+                <div class="footer__enlaces  d-flex flex-column">
+                    <a class="link-light" href="#" class="p-2">Trabaja con nosotros</a>
+                    <a class="link-light" href="#" class="p-2">Acerca de TúCartera</a>
+                    <a class="link-light" href="#" class="p-2">Tú cine más cercano</a>
+                    <a class="link-light" href="#" class="p-2">Contacto</a>
+                </div>
+
+
+            </article>
+
+            <article class="footer__app   col-md-3 order-lg-2 p-0 d-flex flex-row  justify-content-center align-items-center ">
+
+                <a href="#" class="footer__app__logo"><img src="build/img/logo/app.png" alt="app"></a>
+
+            </article>
+
+
+
+
+        </footer>
+
+
+    </div>
+
+    <!-- DETALLES MODAL -->
+
+    <div class="modal fade  " id="detalles" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xl modal-dialog-centered" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="build/img/peliculas/los cazafantasmas.jpg" alt="">
+
+                    <h3 class="display-3 my-4 text-center">Los Cazafantasmas</h3>
+                    <p class="p"><strong>Fecha de estreno:</strong> 5 de diciembre de 1984 España</p>
+                    <p class="p"><strong>Director:</strong> Ivan Reitman</p>
+                    <p class="p"><strong>Música:</strong> Elmer Bernstein</p>
+                    <p class="p"><strong>Año::</strong>  1984</p>
+                    <p class="p"><strong>Ayudante de dirección:</strong> Dary Daiglere</p>
+                    <p class="p"><strong>Ayudante de dirección:</strong></p>
+                    <p class="p"><strong>Signopsis:</strong></p>
+                    <p class="p">Nueva York. Cuatro expertas en fenómenos paranormales, 
+                    Erin Gilbert (Kristen Wiig), Abby Yates (Melissa McCarthy), Jillian Holtzmann (Kate McKinnon) y 
+                    Patty Tolan (Leslie Jones), intentarán detener la amenaza de unos fantasmas que están causando el 
+                    terror en Manhattan. </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script> function enlace(event){ location.href=`${event.target.getAttribute('href')}`;}</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+</html>

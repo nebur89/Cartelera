@@ -1,0 +1,31 @@
+// Colores
+$rojo: #e13e3e;
+$gris: #303234;
+$gris-claro: #dfdfde;
+$dorado: #ad9b33;
+// $negro-claro: #96949456;
+
+$primary: $rojo;
+$secondary : $gris;
+$light: $gris-claro;
+$warning: $dorado;
+// $info: $negro-claro;
+
+
+
+/** Tipografia **/
+$display-font-weight: 900;
+$headings-font-weight: 700;
+
+/** Nav Link */
+$nav-link-padding-x: 0;
+$nav-link-color: $gris;
+$nav-link-hover-color: darken($gris, 10%);
+
+/** Cards **/
+$card-border-color: transparent;
+
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+

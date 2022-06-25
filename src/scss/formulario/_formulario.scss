@@ -1,0 +1,20 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.formulario {
+
+
+    &__datos{
+
+        font-size: 2rem;
+
+
+      .enviar{
+          font-size: 20px;
+      }
+
+     
+
+    }
+
+}

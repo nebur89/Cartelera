@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="build/css/registro.css">
+    <link rel="shortcut icon" href="build/img/favicon/favicon-op1-32x32.png" type="image/ico" />
+
+    <title>TuCartelera Registro</title>
+</head>
+
+<body>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container-xl ">
+
+        <!-- FILA HEADER -->
+        <header class="header row  mb-3 ">
+
+            <!-- FILA HEADER BARRASUPERIOR -->
+            <div class="header__barraSuperior row  m-0 p-5  bg-primary">
+
+                <div
+                    class="header__barraSuperior__banner d-flex flex-column align-items-center flex-md-row justify-content-md-center ">
+
+                    <div class="header__barraSuperior__banner__logo w-50 ">
+
+                        <a href="index.html"><img src="build/img/logo/logo-1.png" class="img-fluid" alt="logo"></a>
+
+                    </div>
+
+                    <div class="header__barraSuperior__tagline px-md-5 ">
+
+                        <h1 class="display-1 h1 text-center  text-md-start ">TuCartelera </h1>
+                        <h2 class="display-2 h2 text-center  text-md-start text-light">Películas Series Estrenos </h2>
+                        <h4 class="display-4 h4 text-center text-md-start ">¡El cine más aclamado y las últimas novedades! </h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FILA HEADER BARRA INFERIOR -->
+            <div class="header__barraInferior row  m-0 p-0   bg-secondary ">
+
+                <nav
+                    class="header__barraInferior__nav  navbar navbar-expand-md navbar-light border-4 border-bottom border-primary  p-0 m-0">
+
+
+
+                    <div class="navbar-toggler w-100  p-0 m-0" data-bs-toggle="collapse"
+                        data-bs-target="menu-horizontal" data-bs-toggle="menu-movil" aria-expanded="false">
+
+                        <div class="accordion">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button d-flex justify-content-center m-0 " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#menu-movil" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <span class="navbar-toggler-icon "></span>
+                                </button>
+                            </h2>
+
+                            <div id="menu-movil" class="accordion-collapse collapse show m-0 p-0"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="menu-movil accordion-body   p-0 m-0">
+                                    <a class="link-light"  href="index.html"  onclick="enlace(event)" >Películas</a>
+                                    <a class="link-light"  href="index.html" onclick="enlace(event)">Series</a>
+                                    <a class="link-light"  href="index.html"  onclick="enlace(event)">Estrenos</a>
+                                    <a class="link-light"  href="index.html"  onclick="enlace(event)" >Eventos</a>
+                                    <a class="link-light"  href="registro.html" onclick="enlace(event)">Registrate!</a>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                    <!-- Menu horizontal -->
+                    <div id="menu-desplegado" class="collapse navbar-collapse justify-content-around ">
+                        <a class="link-light" href="index.html">Películas</a>
+                        <a class="link-light" href="index.html">Series</a>
+                        <a class="link-light" href="index.html">Estrenos</a>
+                        <a class="link-light" href="index.html">Eventos</a>
+                        <a class="link-light" href="registro.html">Registrate!</a>
+                    </div>
+
+
+                </nav>
+
+
+
+            </div>
+
+        </header>
+
+
+        <!--Fila BUSCADOR -->
+        <section class="buscador row  justify-content-end ">
+
+            <div class="buscador__contenedor d-flex  col-md-5  col-xl-3 p-0 mb-3  ">
+
+                <div class="form-outline d-inline-block w-100 ">
+                    <input type="search" id="form1" class="form-control h-100" />
+                </div>
+
+                <button type="button" class="btn btn-primary p-3">
+                    <ion-icon class="buscador__contenedor__lupa" name="search-outline"></ion-icon>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- FILA MAIN -->
+        <main class="main row  my-3 my-md-5 mx-0 ">
+
+
+            <h4 class="display-4 text-center my-5 mb-5">REGÍSTRATE Y FORMA PARTE DE TuCARTELERA</h4>
+
+            <section class="formulario row  col-xl-10 mx-0 px-0 m-md-auto">
+
+                <div class="registro__ventajas p-5  my-2  order-md-1 col-md-8 m-auto my-md-0   col-xl-6  bg-primary">
+                
+                    <h5 class="display-5 text-center text-xl-start"> <span><i class="bi bi-check-circle-fill"></i></span> SE EL PRIMERO EN CONOCER</h5>
+
+                    <h6 class="display-6 my-4 text-light my-lg-5"> <span class="redistros__ventas__iconos "><ion-icon name="checkmark-done-outline"></ion-icon></span> Los últimos estrenos</h6>
+                    <h6 class="display-6 my-4 text-light my-lg-5"> <span class="redistros__ventas__iconos "><ion-icon name="checkmark-done-outline"></ion-icon></span> Mejores descuentos en entradas</h6>
+                    <h6 class="display-6 my-4 text-light my-lg-5 "> <span class="redistros__ventas__iconos "><ion-icon name="checkmark-done-outline"></ion-icon></span> Las últimas noticias de rodajes</h6>
+                    <h6 class="display-6 my-4 text-light my-lg-5"> <span class="redistros__ventas__iconos "><ion-icon name="checkmark-done-outline"></ion-icon></span> Venta anticipada en entradas </h6>
+
+                </div>
+
+
+                <div class="formulario__datos  p-4  order-md-0  order-md-0 col-md-8 m-auto mb-md-3  mb-xl-0 col-xl-5  bg-light ">
+                  
+
+                    <form action="#" class="needs-validation" novalidate>
+
+                     
+                         <label for="nombre" class="form-label ">Nombre</label>
+                        <div class="form-floating  mb-3 position-relative">
+                            <input type="text" class="form-control" id="nombre"  placeholder required>
+                            <div class="invalid-tooltip">El campo de nombre no puede estar vacío</div>  
+                        </div>
+
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <div class="form-floating mb-3 position-relative">
+                            <input type="text" class="form-control" id="apellidos"  placeholder required>
+                            <div class="invalid-tooltip">El campo de apellido no puede estar vacío</div>  
+                        </div>
+
+                        <label for="dirección" class="form-label">Dirección</label>
+                        <div class="form-floating mb-3 position-relative">
+                            <input type="text" class="form-control" id="dirección"  placeholder >
+                        </div>
+
+                        <label for="email" class="form-label">Correo </label>
+                        <div class="form-floating mb-3 position-relative">
+                            <input type="email" class="form-control" id="email" aria-describedby="ayuda-email" placeholder required>
+                            <div id="ayuda-email" class="form-text">Debe ser un correo válido</div>
+                            <div class="invalid-tooltip">Correo no tiene formato válido</div>
+        
+                        </div>
+
+                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <div class="form-floating mb-3 position-relative">
+                            <input type="password" class="form-control" id="contraseña"  aria-describedby="ayuda-contraseña" placeholder required>
+                            <div id="ayuda-contraseña" class="form-text">La contraseña debe ser alfanumérica</div>
+                            <div class="invalid-tooltip">El campo contraseña no puede estar vacío</div>
+                        </div>
+
+
+                        <div class="form-check  my-5">
+                            <input class="form-check-input " type="checkbox" required>
+                            <label class="form-check-label" for="condiciones">He leído y acepto los términos y condiciones</label>
+
+                        </div>
+        
+                        <div class="text-center m-5">
+                            <button class="btn btn-secondary w-25 enviar" type="submit">Enviar</button>
+                        </div>
+        
+                    </form>
+
+                </div>
+
+            
+            </section>
+
+             
+
+        </main>
+
+
+        <!-- FOOTER-->
+        <footer class="footer row justify-content-around  my-0 p-3 bg-primary ">
+
+
+            <article
+                class="footer__rrss  col-md-3 order-lg-1  d-flex  flex-row justify-content-center  align-items-center mb-5  ">
+
+                <ion-icon class=" p-2" name="logo-facebook"></ion-icon>
+                <ion-icon class=" p-2" name="logo-instagram"></ion-icon>
+                <ion-icon class=" p-2" name="logo-twitter"></ion-icon>
+                <ion-icon class=" p-2" name="logo-twitch"></ion-icon>
+
+            </article>
+
+
+
+            <article class="footer__info col-md-3  order-lg-0  p-0  d-flex flex-column align-items-center">
+
+                <h4 class="display-4 mb-3">TuCartera</h4>
+
+                <div class="footer__enlaces  d-flex flex-column">
+                    <a class="link-light" href="#" class="p-2">Trabaja con nosotros</a>
+                    <a class="link-light" href="#" class="p-2">Acerca de TúCartera</a>
+                    <a class="link-light" href="#" class="p-2">Tú cine más cercano</a>
+                    <a class="link-light" href="#" class="p-2">Contacto</a>
+                </div>
+
+
+            </article>
+
+
+
+            <article
+                class="footer__app   col-md-3 order-lg-2 p-0 d-flex flex-row  justify-content-center align-items-center ">
+
+                <a href="#" class="footer__app__logo"><img src="build/img/logo/app.png" alt="app"></a>
+
+            </article>
+
+
+
+
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script> function enlace(event){ location.href=`${event.target.getAttribute('href')}`;}</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        (function () {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+    </script>
+
+    
+
+   
+</body>
+
+</html>

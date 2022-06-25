@@ -1,0 +1,33 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+@use '../base/clases' as c;
+
+.header__barraInferior__nav {
+  
+    
+    // .navbar-toggler{
+    //     // width: 100%;
+    //     // margin: 0px;
+    //     // padding: 0px;
+    // }
+    // .accordion-button {
+    //     display: flex;
+    //     justify-content:center;
+    // }
+
+
+
+    a{
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    // .accordion-body{
+    //     width: 100%;
+    // }
+
+   
+}

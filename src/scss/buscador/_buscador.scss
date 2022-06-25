@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.buscador {
+    
+    &__contenedor{
+    
+      height: 40px;
+      
+
+      &__lupa{
+        font-size: 2rem;
+      }
+
+    }
+
+
+
+
+   
+}
